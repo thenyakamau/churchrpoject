@@ -5,7 +5,6 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.HBox?>
 
@@ -13,7 +12,7 @@
    <children>
       <ImageView fitHeight="66.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../images/jimmy-fallon.png" />
+<!--            <Image url="@../images/jimmy-fallon.png" />-->
          </image></ImageView>
       <Label prefHeight="78.0" prefWidth="107.0" text="Janice Murithi" />
       <Label prefHeight="78.0" prefWidth="92.0" text="0702192312" />

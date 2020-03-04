@@ -8,6 +8,7 @@ module ChurchProject {
     requires converter.gson;
     requires okio;
     requires adapter.rxjava2;
+    requires com.jfoenix;
 
 
     opens home;

@@ -19,8 +19,6 @@ public class Api {
 
     private Retrofit provideRetrofitInstance() {
 
-        Gson gson = new GsonBuilder().serializeNulls().create();
-
         return new Retrofit.Builder()
                 .baseUrl(BASE_URL)
                  .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
@@ -89,5 +87,10 @@ public class Api {
 
     }
 
+    public ApiInterface fetchApiInterface(){
+
+        return provideRetrofitInstance().create(ApiInterface.class);
+
+    }
 
 }
