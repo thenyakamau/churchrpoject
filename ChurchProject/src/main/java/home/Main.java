@@ -14,11 +14,13 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        String fxmlFile = "/fxml/main.fxml";
+        String fxmlFile = "/fxml/dashboard.fxml";
 
         FXMLLoader loader = new FXMLLoader();
         Parent root = (Parent) loader.load(getClass().getResourceAsStream(fxmlFile));
         primaryStage.setScene(new Scene(root));
+        primaryStage.initStyle(StageStyle.UNDECORATED);
+        primaryStage.setTitle("Church");
         root.setOnMousePressed(mouseEvent -> {
 
             x = mouseEvent.getSceneX();

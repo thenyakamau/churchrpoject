@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<HBox fx:id="parent" prefHeight="680.0" prefWidth="1200.0"  xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" >
+    <children>
+        <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="100.0" style="-fx-background-color: #121920;">
+            <children>
+                <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #2BBFBD;">
+                    <children>
+                        <ImageView fitHeight="50.0" fitWidth="80.0" pickOnBounds="true" smooth="false">
+                            <image>
+                                <!--<Image url="@images/Velo_logo.jpg" />-->
+                            </image>
+                        </ImageView>
+                    </children>
+                </HBox>
+                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+                    <children>
+                        <FontAwesomeIcon iconName="DASHBOARD" size="2em" styleClass="sidebar-icon" />
+                        <FontAwesomeIcon iconName="GLOBE" layoutX="48.0" layoutY="119.0" size="2em" styleClass="sidebar-icon">
+                            <VBox.margin>
+                                <Insets top="30.0" />
+                            </VBox.margin>
+                        </FontAwesomeIcon>
+                        <FontAwesomeIcon iconName="FOLDER_OPEN" layoutX="48.0" layoutY="107.0" size="2em" styleClass="sidebar-icon">
+                            <VBox.margin>
+                                <Insets top="30.0" />
+                            </VBox.margin>
+                        </FontAwesomeIcon>
+                        <FontAwesomeIcon iconName="SHARE" layoutX="48.0" layoutY="131.0" size="2em" styleClass="sidebar-icon">
+                            <VBox.margin>
+                                <Insets top="30.0" />
+                            </VBox.margin>
+                        </FontAwesomeIcon>
+                    </children>
+                </VBox>
+                <VBox alignment="BOTTOM_CENTER" layoutX="10.0" layoutY="110.0" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+                    <children>
+                        <FontAwesomeIcon iconName="INBOX" size="2em" styleClass="sidebar-icon" />
+                        <FontAwesomeIcon iconName="GEAR" layoutX="48.0" layoutY="131.0" size="2em" styleClass="sidebar-icon">
+                            <VBox.margin>
+                                <Insets top="30.0" />
+                            </VBox.margin>
+                        </FontAwesomeIcon>
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin>
+                </VBox>
+            </children>
+        </VBox>
+        <VBox style="-fx-background-color: #eee;" HBox.hgrow="ALWAYS">
+            <children>
+                <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #fff;">
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding>
+                    <children>
+                        <FontAwesomeIcon glyphStyle="-fx-fill:#999" iconName="SEARCH" size="1.5em" />
+                        <JFXTextField focusColor="#2bbfbd" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="300.0" promptText="Search Places" unFocusColor="#999999">
+                            <font>
+                                <Font name="Candara" size="14.0" />
+                            </font>
+                        </JFXTextField>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                            <padding>
+                                <Insets right="20.0" />
+                            </padding>
+                            <children>
+                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
+                                    <image>
+                                        <Image url="@images/user_img.jpg" />
+                                    </image>
+                                </ImageView>
+                                <Label text="Benny Coder" textFill="#999999" underline="true">
+                                    <font>
+                                        <Font name="Calibri Light" size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="5.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <FontAwesomeIcon glyphStyle="-fx-fill:#999" iconName="LOCK" size="1.5em">
+                                    <HBox.margin>
+                                        <Insets left="20.0" />
+                                    </HBox.margin>
+                                </FontAwesomeIcon>
+                            </children>
+                        </HBox>
+                    </children>
+                </HBox>
+                <ImageView fitHeight="200.0" fitWidth="1100.0" pickOnBounds="true" smooth="false">
+                    <image>
+                        <Image url="@images/background_img.jpg" />
+                    </image>
+                </ImageView>
+                <HBox VBox.vgrow="ALWAYS">
+                    <children>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="275.0" HBox.hgrow="ALWAYS">
+                            <children>
+                                <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="250.0" style="-fx-background-color: #fff;" VBox.vgrow="NEVER">
+                                    <children>
+                                        <ImageView fitHeight="160.0" fitWidth="250.0" pickOnBounds="true" smooth="false" VBox.vgrow="ALWAYS">
+                                            <image>
+                                                <Image url="@images/cart_img_01.jpg" />
+                                            </image>
+                                        </ImageView>
+                                        <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="250.0" VBox.vgrow="ALWAYS">
+                                            <children>
+                                                <Label layoutX="14.0" layoutY="26.0" text="Cory Peterson" textFill="#999999">
+                                                    <font>
+                                                        <Font name="Arial" size="14.0" />
+                                                    </font>
+                                                </Label>
+                                                <Label layoutX="14.0" layoutY="49.0" text="Texas, USA" textFill="#999999">
+                                                    <font>
+                                                        <Font name="Arial" size="12.0" />
+                                                    </font>
+                                                </Label>
+                                                <Label layoutX="176.0" layoutY="41.0" text="12.5k" textFill="#999999">
+                                                    <font>
+                                                        <Font name="Arial" size="14.0" />
+                                                    </font>
+                                                </Label>
+                                                <FontAwesomeIcon glyphStyle="-fx-fill:#999" iconName="HEART" layoutX="219.0" layoutY="55.0" size="1.5em" />
+                                            </children>
+                                        </Pane>
+                                    </children>
+                                    <effect>
+                                        <DropShadow color="#d0cfcf" />
+                                    </effect>
+                                </VBox>
+                            </children>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="275.0">
+                            <children>
+                                <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="250.0" style="-fx-background-color: #fff;" VBox.vgrow="NEVER">
+                                    <children>
+                                        <ImageView fitHeight="160.0" fitWidth="250.0" pickOnBounds="true" smooth="false" VBox.vgrow="ALWAYS">
+                                            <image>
+                                                <Image url="@images/cart_img_04.jpg" />
+                                            </image>
+                                        </ImageView>
+                                        <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="250.0" VBox.vgrow="ALWAYS">
+                                            <children>
+                                                <Label layoutX="14.0" layoutY="26.0" text="Cory Peterson" textFill="#999999">
+                                                    <font>
+                                                        <Font name="Arial" size="14.0" />
+                                                    </font>
+                                                </Label>
+                                                <Label layoutX="14.0" layoutY="49.0" text="Texas, USA" textFill="#999999">
+                                                    <font>
+                                                        <Font name="Arial" size="12.0" />
+                                                    </font>
+                                                </Label>
+                                                <Label layoutX="176.0" layoutY="41.0" text="12.5k" textFill="#999999">
+                                                    <font>
+                                                        <Font name="Arial" size="14.0" />
+                                                    </font>
+                                                </Label>
+                                                <FontAwesomeIcon glyphStyle="-fx-fill:#999" iconName="HEART" layoutX="219.0" layoutY="55.0" size="1.5em" />
+                                            </children>
+                                        </Pane>
+                                    </children>
+                                    <effect>
+                                        <DropShadow color="#d0cfcf" />
+                                    </effect>
+                                </VBox>
+                            </children>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="835.0" layoutY="10.0" prefHeight="200.0" prefWidth="275.0">
+                            <children>
+                                <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="250.0" style="-fx-background-color: #fff;" VBox.vgrow="NEVER">
+                                    <children>
+                                        <ImageView fitHeight="160.0" fitWidth="250.0" pickOnBounds="true" smooth="false" VBox.vgrow="ALWAYS">
+                                            <image>
+                                                <Image url="@images/cart_img_03.jpg" />
+                                            </image>
+                                        </ImageView>
+                                        <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="250.0" VBox.vgrow="ALWAYS">
+                                            <children>
+                                                <Label layoutX="14.0" layoutY="26.0" text="Cory Peterson" textFill="#999999">
+                                                    <font>
+                                                        <Font name="Arial" size="14.0" />
+                                                    </font>
+                                                </Label>
+                                                <Label layoutX="14.0" layoutY="49.0" text="Texas, USA" textFill="#999999">
+                                                    <font>
+                                                        <Font name="Arial" size="12.0" />
+                                                    </font>
+                                                </Label>
+                                                <Label layoutX="176.0" layoutY="41.0" text="12.5k" textFill="#999999">
+                                                    <font>
+                                                        <Font name="Arial" size="14.0" />
+                                                    </font>
+                                                </Label>
+                                                <FontAwesomeIcon glyphStyle="-fx-fill:#999" iconName="HEART" layoutX="219.0" layoutY="55.0" size="1.5em" />
+                                            </children>
+                                        </Pane>
+                                    </children>
+                                    <effect>
+                                        <DropShadow color="#d0cfcf" />
+                                    </effect>
+                                </VBox>
+                            </children>
+                        </VBox>
+                        <VBox layoutX="560.0" layoutY="10.0" prefHeight="380.0" prefWidth="226.0" style="-fx-background-color: #fff;">
+                            <children>
+                                <HBox alignment="CENTER_LEFT">
+                                    <VBox.margin>
+                                        <Insets left="10.0" />
+                                    </VBox.margin>
+                                    <children>
+                                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
+                                            <image>
+                                                <Image url="@images/user_img.jpg" />
+                                            </image>
+                                        </ImageView>
+                                        <Label minHeight="-Infinity" minWidth="-Infinity" prefWidth="100.0" text="Benny Coder" textFill="#999999">
+                                            <font>
+                                                <Font name="Calibri Light" size="14.0" />
+                                            </font>
+                                        </Label>
+                                        <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="10.0" prefWidth="10.0" styleClass="online-dot">
+                                            <HBox.margin>
+                                                <Insets left="20.0" />
+                                            </HBox.margin>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT" layoutX="20.0" layoutY="10.0">
+                                    <children>
+                                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
+                                            <image>
+                                                <Image url="@images/fevicon_02.jpg" />
+                                            </image>
+                                        </ImageView>
+                                        <Label minHeight="-Infinity" minWidth="-Infinity" prefWidth="100.0" text="Mr. James" textFill="#999999">
+                                            <font>
+                                                <Font name="Calibri Light" size="14.0" />
+                                            </font>
+                                        </Label>
+                                        <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="10.0" prefWidth="10.0" styleClass="online-dot">
+                                            <HBox.margin>
+                                                <Insets left="20.0" />
+                                            </HBox.margin>
+                                        </Label>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets left="10.0" />
+                                    </VBox.margin>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT" layoutX="20.0" layoutY="10.0">
+                                    <children>
+                                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
+                                            <image>
+                                                <Image url="@images/fevicon_01.jpg" />
+                                            </image>
+                                        </ImageView>
+                                        <Label minHeight="-Infinity" minWidth="-Infinity" prefWidth="100.0" text="Micky Virus" textFill="#999999">
+                                            <font>
+                                                <Font name="Calibri Light" size="14.0" />
+                                            </font>
+                                        </Label>
+                                        <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="10.0" prefWidth="10.0" styleClass="online-dot">
+                                            <HBox.margin>
+                                                <Insets left="20.0" />
+                                            </HBox.margin>
+                                        </Label>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets left="10.0" />
+                                    </VBox.margin>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="60.0">
+                                    <children>
+                                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
+                                            <image>
+                                                <Image url="@images/fevicon_03.jpg" />
+                                            </image>
+                                        </ImageView>
+                                        <Label minHeight="-Infinity" minWidth="-Infinity" prefWidth="100.0" text="KeepToo" textFill="#999999">
+                                            <font>
+                                                <Font name="Calibri Light" size="14.0" />
+                                            </font>
+                                        </Label>
+                                        <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="10.0" prefWidth="10.0" styleClass="online-dot">
+                                            <HBox.margin>
+                                                <Insets left="20.0" />
+                                            </HBox.margin>
+                                        </Label>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets left="10.0" />
+                                    </VBox.margin>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT" layoutX="20.0" layoutY="60.0">
+                                    <children>
+                                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
+                                            <image>
+                                                <Image url="@images/fevicon_04.jpg" />
+                                            </image>
+                                        </ImageView>
+                                        <Label minHeight="-Infinity" minWidth="-Infinity" prefWidth="100.0" text="Alixa" textFill="#999999">
+                                            <font>
+                                                <Font name="Calibri Light" size="14.0" />
+                                            </font>
+                                        </Label>
+                                        <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="10.0" prefWidth="10.0" styleClass="online-dot">
+                                            <HBox.margin>
+                                                <Insets left="20.0" />
+                                            </HBox.margin>
+                                        </Label>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets left="10.0" />
+                                    </VBox.margin>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT" layoutX="20.0" layoutY="110.0">
+                                    <children>
+                                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
+                                            <image>
+                                                <Image url="@images/user_img.jpg" />
+                                            </image>
+                                        </ImageView>
+                                        <Label minHeight="-Infinity" minWidth="-Infinity" prefWidth="100.0" text="Jack" textFill="#999999">
+                                            <font>
+                                                <Font name="Calibri Light" size="14.0" />
+                                            </font>
+                                        </Label>
+                                        <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="10.0" prefWidth="10.0" styleClass="online-dot">
+                                            <HBox.margin>
+                                                <Insets left="20.0" />
+                                            </HBox.margin>
+                                        </Label>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets left="10.0" />
+                                    </VBox.margin>
+                                </HBox>
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</HBox>

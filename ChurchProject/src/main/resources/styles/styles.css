@@ -1,0 +1,12 @@
+.button:hover{
+-fx-background-color: #00C853
+-fx-text-fill: #FFFFFF;
+-fx-text-alignment: center;
+}
+.button{
+-fx-background-color: #FFFFFF;
+}
+
+.pane{
+
+}
