@@ -6,6 +6,7 @@ use App\Admin;
 use App\Deacons;
 use App\Elders;
 use App\Http\Controllers\Controller;
+use App\Members;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
@@ -32,8 +33,6 @@ class Register extends Controller
         $this->validate($request, [
             'name'=> 'required',
             'email'=> 'required|email|unique:users,email',
-            'description' => 'required',
-            'qualification' => 'required',
             'status' => 'required',
             'committment' => 'required',
             'phone_number' => 'required',
@@ -52,7 +51,13 @@ class Register extends Controller
         $user->gender  = $request->gender;
         $user->marriage_status = $request->marriage_status;
         $user->committment = $request->committment;
-        $user->save();
+
+        if($request->hasFile('image')){
+
+            $image = $request->file('image');
+            $user->image = $image->store("uploads/hop/logo");
+
+        }
 
 
         if($request->status == 'deacons'){
@@ -64,13 +69,13 @@ class Register extends Controller
             $deacon->description = $request->description;
             $deacon->qualification = $request->qualifications;
             $deacon->assigned_tasks = "unassigned";
+            $user->save();
 
             if($deacon->save()){
 
                 return response()->json(['Success'=> 'Deacon has successfully been added...']);
 
             }else{
-                $user->delete();
                 return response()->json(['Error' => 'Something went wrong...']);
             }
 
@@ -83,13 +88,13 @@ class Register extends Controller
             $elders->description = $request->description;
             $elders->qualification = $request->qualifications;
             $elders->assigned_tasks = "unassigned";
+            $user->save();
 
             if($elders->save()){
 
                 return response()->json(['Success'=> 'Elder has successfully been added...']);
 
             }else{
-                $user->delete();
                 return response()->json(['Error' => 'Something went wrong...']);
             }
 
@@ -101,6 +106,7 @@ class Register extends Controller
             $admin->description = $request->description;
             $admin->qualification = $request->qualifications;
             $admin->assigned_tasks = "unassigned";
+            $user->save();
 
             if($admin->save()){
 
@@ -108,12 +114,19 @@ class Register extends Controller
                 return response()->json(['Success'=> 'Admin has successfully been added... confirm email']);
 
             }else{
-                $user->delete();
                 return response()->json(['Error' => 'Something went wrong...']);
             }
 
         }else{
-            return response()->json(['Success'=> 'Member has successfully been added... confirm email']);
+            $user->password = Hash::make("12345678");
+            $user->save();
+            $member = new Members();
+            $member->active_status = 1;
+            $member->user_id = $user->id;
+
+            $member->save();
+
+            return response()->json(['Success'=> 'Member has successfully been added...']);
         }
     }
 

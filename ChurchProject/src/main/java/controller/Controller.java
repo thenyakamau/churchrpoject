@@ -1,5 +1,7 @@
 package controller;
 
+import interfaces.MembersInterface;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -16,17 +18,21 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import model.MemberModel;
+import model.MembersDatum;
 import networking.Api;
 import networking.ApiInterface;
+import presenters.MembersPresenter;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.ResourceBundle;
 
-public class Controller implements Initializable {
+public class Controller implements Initializable, MembersInterface {
 
     @FXML
     private Button btn_dashboard;
@@ -82,50 +88,17 @@ public class Controller implements Initializable {
     @FXML
     private Pane pane_dashboard;
 
+    private MembersPresenter membersPresenter;
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
-        Node[] nodes = new Node[10];
+        membersPresenter = new MembersPresenter(this);
 
-        for(int i = 0; i< nodes.length; i++){
-
-            String fmlFile = "/fxml/members_item.fxml";
-            FXMLLoader loader = new FXMLLoader();
-            try {
-                nodes[i] = (Parent) loader.load(getClass().getResourceAsStream(fmlFile));
-                pnItems.getChildren().add(nodes[i]);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
-        }
+        membersPresenter.getMembersList();
 
         Image image = new Image(getClass().getResourceAsStream("/images/icons8_Home_32px.png"));
         menu_home_image_view.setImage(image);
-
-    }
-
-    public void getMembersList(){
-        Api api = new Api();
-        Call<MemberModel> call = api.fetchApiInterface().fetchChurchMembers();
-
-        call.enqueue(new Callback<MemberModel>() {
-            @Override
-            public void onResponse(Call<MemberModel> call, Response<MemberModel> response) {
-
-                if (response.isSuccessful() && response.body() != null){
-
-
-
-                }
-
-            }
-
-            @Override
-            public void onFailure(Call<MemberModel> call, Throwable throwable) {
-
-            }
-        });
 
         btn_dashboard.setOnMouseClicked(mouseEvent -> {
 
@@ -137,8 +110,33 @@ public class Controller implements Initializable {
 
         });
 
+
     }
 
+    @Override
+    public void membersData(List<MembersDatum> membersDatumList) {
+
+        Platform.runLater(() -> {
+            Node[] nodes = new Node[membersDatumList.size()];
+
+            for(int i = 0; i< nodes.length; i++){
+
+                MembersDatum membersDatum = membersDatumList.get(i);
+                MembersItemController membersItemController = new MembersItemController(membersDatum);
+                String fmlFile = "/fxml/members_item.fxml";
+                FXMLLoader loader = new FXMLLoader();
+                try {
+                    loader.setController(membersItemController);
+                    nodes[i] = (Parent) loader.load(getClass().getResourceAsStream(fmlFile));
+                    pnItems.getChildren().add(nodes[i]);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+            }
+        });
+
+    }
 
    /* public void handleClicks(ActionEvent actionEvent){
 

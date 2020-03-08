@@ -14,7 +14,10 @@ class MembersController extends Controller
 
     public function fetchChurchMembers(){
 
-        $members = Members::paginate();
+        $members = DB::table('members')
+        ->join('users', 'users.id', 'members.user_id')
+        ->select('*')
+        ->paginate();
 
         return response()->json(['churchMembers'=> $members]);
 

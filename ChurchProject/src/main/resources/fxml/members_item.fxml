@@ -14,7 +14,7 @@
          <image>
 <!--            <Image url="@../images/jimmy-fallon.png" />-->
          </image></ImageView>
-      <Label prefHeight="78.0" prefWidth="107.0" text="Janice Murithi" />
+      <Label fx:id="members_item_name" prefHeight="78.0" prefWidth="107.0" text="Janice Murithi" />
       <Label prefHeight="78.0" prefWidth="92.0" text="0702192312" />
       <Label alignment="CENTER" prefHeight="78.0" prefWidth="81.0" text="23 " />
       <Label prefHeight="83.0" prefWidth="93.0" text="Youth" />

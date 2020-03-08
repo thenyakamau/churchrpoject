@@ -3,8 +3,12 @@ package networking;
 import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import okhttp3.*;
 
+
+import okhttp3.Interceptor;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -15,10 +19,10 @@ import java.util.concurrent.TimeUnit;
 public class Api {
 
     private Retrofit retrofit;
-    private String BASE_URL = "";
 
-    private Retrofit provideRetrofitInstance() {
+    private static Retrofit provideRetrofitInstance() {
 
+        String BASE_URL = "https://fdfe2a98.ngrok.io/churchproject/churchbackend/public/";
         return new Retrofit.Builder()
                 .baseUrl(BASE_URL)
                  .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
@@ -74,7 +78,7 @@ public class Api {
 
     }
 
-    private Gson myGson(){
+    private static Gson myGson(){
 
         return new GsonBuilder()
                 .enableComplexMapKeySerialization()
@@ -87,7 +91,7 @@ public class Api {
 
     }
 
-    public ApiInterface fetchApiInterface(){
+    public static ApiInterface fetchApiInterface(){
 
         return provideRetrofitInstance().create(ApiInterface.class);
 
