@@ -15,6 +15,7 @@ import javafx.scene.control.ProgressBar;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import model.MemberModel;
@@ -32,7 +33,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 
-public class Controller implements Initializable, MembersInterface {
+public class Controller implements Initializable {
+
+
+    @FXML
+    private AnchorPane anchor_pane_main;
 
     @FXML
     private Button btn_dashboard;
@@ -93,50 +98,49 @@ public class Controller implements Initializable, MembersInterface {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
-        membersPresenter = new MembersPresenter(this);
+        /*Image image = new Image(getClass().getResourceAsStream("/images/icons8_Home_32px.png"));
+        menu_home_image_view.setImage(image);*/
 
-        membersPresenter.getMembersList();
+        String fmlFile3 = "/fxml/dashboard.fxml";
 
-        Image image = new Image(getClass().getResourceAsStream("/images/icons8_Home_32px.png"));
-        menu_home_image_view.setImage(image);
+        try {
+            FXMLLoader loader1 = new FXMLLoader();
+            Node node = (Parent) loader1.load(getClass().getResourceAsStream(fmlFile3));
+            anchor_pane_main.getChildren().setAll(node);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
 
         btn_dashboard.setOnMouseClicked(mouseEvent -> {
 
-            btn_deacons.setVisible(false);
-            pane_dashboard.toBack();
+           String fmlFile2 = "/fxml/dashboard.fxml";
+
+            try {
+                FXMLLoader loader1 = new FXMLLoader();
+                Node node = (Parent) loader1.load(getClass().getResourceAsStream(fmlFile2));
+                anchor_pane_main.getChildren().setAll(node);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
 
         });
         btn_members.setOnMouseClicked(mouseEvent -> {
 
-        });
+            String fmlFile = "/fxml/members.fxml";
+            FXMLLoader loader = new FXMLLoader();
 
-
-    }
-
-    @Override
-    public void membersData(List<MembersDatum> membersDatumList) {
-
-        Platform.runLater(() -> {
-            Node[] nodes = new Node[membersDatumList.size()];
-
-            for(int i = 0; i< nodes.length; i++){
-
-                MembersDatum membersDatum = membersDatumList.get(i);
-                MembersItemController membersItemController = new MembersItemController(membersDatum);
-                String fmlFile = "/fxml/members_item.fxml";
-                FXMLLoader loader = new FXMLLoader();
-                try {
-                    loader.setController(membersItemController);
-                    nodes[i] = (Parent) loader.load(getClass().getResourceAsStream(fmlFile));
-                    pnItems.getChildren().add(nodes[i]);
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-
+            try {
+                Node node = (Parent) loader.load(getClass().getResourceAsStream(fmlFile));
+                anchor_pane_main.getChildren().setAll(node);
+            } catch (IOException e) {
+                e.printStackTrace();
             }
-        });
 
+        });
     }
+
 
    /* public void handleClicks(ActionEvent actionEvent){
 

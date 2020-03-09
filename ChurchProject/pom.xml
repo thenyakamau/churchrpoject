@@ -105,6 +105,19 @@
             <version>8.9</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.openjfx/javafx -->
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx</artifactId>
+            <version>15-ea+2</version>
+            <type>pom</type>
+        </dependency>
+
+        <dependency>
+            <groupId>com.cathive.fonts</groupId>
+            <artifactId>fonts-fontawesome</artifactId>
+            <version>3.2.1.0</version>
+        </dependency>
 
     </dependencies>
     

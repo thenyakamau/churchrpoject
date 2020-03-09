@@ -19,6 +19,8 @@ public class MembersPresenter {
         this.membersInterface = membersInterface;
     }
 
+
+
     public void getMembersList() {
        // Proxy.newProxyInstance(ClassLoader.getPlatformClassLoader(), ApiInterface.class, )
         Call<MemberModel> call = Api.fetchApiInterface().fetchChurchMembers();

@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            prefHeight="400.0" prefWidth="600.0">
 
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<AnchorPane prefHeight="791.0" prefWidth="1339.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <JFXHamburger fx:id="hamburger_javafx" layoutX="1180.0" layoutY="14.0" />
+      <JFXDrawer fx:id="drawer_jfx_menu" prefHeight="685.0" prefWidth="109.0" />
+      <AnchorPane fx:id="anchor_pane_dashboard" layoutX="109.0" layoutY="-1.0" prefHeight="685.0" prefWidth="1063.0" />
+   </children>
 </AnchorPane>

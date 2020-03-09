@@ -2,39 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_13_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_1_3_61.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_common_1_3_61.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_3_14_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_4_4_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_1_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_2_4_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_retrofit2_adapter_rxjava_2_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_retrofit2_adapter_rxjava_2_7_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_retrofit2_converter_gson_2_3_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_retrofit2_converter_gson_2_7_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_retrofit2_retrofit_2_7_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_retrofit2_retrofit_2_7_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__de_jensd_fontawesomefx_8_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__de_jensd_fontawesomefx_8_9.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxjava2_rxjava_2_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxjava2_rxjava_2_2_18.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxjava2_rxjavafx_2_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxjava_1_1_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxjava_1_3_8.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_cathive_fonts_fonts_fontawesome_3_2_1_0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChurchProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchProject.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/DashBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/DashBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/home/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/home/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/MemberModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/MemberModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/MembersItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/MembersItemController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/networking/Api.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/networking/Api.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/presenters/MembersPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/presenters/MembersPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/dashboard.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/m_dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/m_dashboard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/main.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/members_item.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/members_item.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/Controller$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/DashBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/DashBoard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/MembersItemController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/MembersItemController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fxml/dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/dashboard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fxml/m_dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/m_dashboard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fxml/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/main.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/fxml/members_item.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/members_item.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/home/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/home/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/MemberModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/MemberModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/networking/Api.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/networking/Api.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../churchbackend/app/Http/Controllers/Api/Auth/Register.php" beforeDir="false" afterPath="$PROJECT_DIR$/../churchbackend/app/Http/Controllers/Api/Auth/Register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../churchbackend/app/Http/Controllers/Api/MembersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../churchbackend/app/Http/Controllers/Api/MembersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../churchbackend/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/../churchbackend/config/filesystems.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../churchbackend/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/../churchbackend/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,8 +83,8 @@
       <list>
         <option value="HTML File" />
         <option value="module-info" />
-        <option value="FxmlFile" />
         <option value="Interface" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -298,10 +287,10 @@
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
     <state x="721" y="327" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1048@0.0.1920.1048" timestamp="1583389163898" />
-    <state x="765" y="233" key="#com.intellij.ide.util.MemberChooser" timestamp="1583621270285">
+    <state x="765" y="233" key="#com.intellij.ide.util.MemberChooser" timestamp="1583705742747">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state x="765" y="233" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1048@0.0.1920.1048" timestamp="1583621270285" />
+    <state x="765" y="233" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1048@0.0.1920.1048" timestamp="1583705742747" />
     <state x="683" y="213" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1582352999824">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
@@ -318,22 +307,22 @@
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
     <state x="666" y="265" key="FileChooserDialogImpl/0.0.1920.1048@0.0.1920.1048" timestamp="1583054884464" />
-    <state width="1860" height="283" key="GridCell.Tab.0.bottom" timestamp="1583673921419">
+    <state width="1860" height="283" key="GridCell.Tab.0.bottom" timestamp="1583730710849">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state width="1860" height="283" key="GridCell.Tab.0.bottom/0.0.1920.1048@0.0.1920.1048" timestamp="1583673921419" />
-    <state width="1860" height="283" key="GridCell.Tab.0.center" timestamp="1583673921419">
+    <state width="1860" height="283" key="GridCell.Tab.0.bottom/0.0.1920.1048@0.0.1920.1048" timestamp="1583730710849" />
+    <state width="1860" height="283" key="GridCell.Tab.0.center" timestamp="1583730710849">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state width="1860" height="283" key="GridCell.Tab.0.center/0.0.1920.1048@0.0.1920.1048" timestamp="1583673921419" />
-    <state width="1860" height="283" key="GridCell.Tab.0.left" timestamp="1583673921419">
+    <state width="1860" height="283" key="GridCell.Tab.0.center/0.0.1920.1048@0.0.1920.1048" timestamp="1583730710849" />
+    <state width="1860" height="283" key="GridCell.Tab.0.left" timestamp="1583730710848">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state width="1860" height="283" key="GridCell.Tab.0.left/0.0.1920.1048@0.0.1920.1048" timestamp="1583673921419" />
-    <state width="1860" height="283" key="GridCell.Tab.0.right" timestamp="1583673921419">
+    <state width="1860" height="283" key="GridCell.Tab.0.left/0.0.1920.1048@0.0.1920.1048" timestamp="1583730710848" />
+    <state width="1860" height="283" key="GridCell.Tab.0.right" timestamp="1583730710849">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state width="1860" height="283" key="GridCell.Tab.0.right/0.0.1920.1048@0.0.1920.1048" timestamp="1583673921419" />
+    <state width="1860" height="283" key="GridCell.Tab.0.right/0.0.1920.1048@0.0.1920.1048" timestamp="1583730710849" />
     <state x="490" y="179" key="Maven.ArtifactSearchDialog" timestamp="1582837997786">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
@@ -342,18 +331,18 @@
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
     <state x="440" y="98" key="SettingsEditor/0.0.1920.1048@0.0.1920.1048" timestamp="1582834344712" />
-    <state x="656" y="348" key="com.intellij.ide.util.TipDialog" timestamp="1583521053208">
+    <state x="656" y="348" key="com.intellij.ide.util.TipDialog" timestamp="1583735593876">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state x="656" y="348" key="com.intellij.ide.util.TipDialog/0.0.1920.1048@0.0.1920.1048" timestamp="1583521053208" />
+    <state x="656" y="348" key="com.intellij.ide.util.TipDialog/0.0.1920.1048@0.0.1920.1048" timestamp="1583735593876" />
     <state x="664" y="434" key="com.intellij.jarRepository.RepositoryAttachDialog-SEARCH" timestamp="1582833337894">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
     <state x="664" y="434" key="com.intellij.jarRepository.RepositoryAttachDialog-SEARCH/0.0.1920.1048@0.0.1920.1048" timestamp="1582833337894" />
-    <state x="616" y="242" width="672" height="677" key="run.anything.popup" timestamp="1582326693270">
+    <state x="616" y="242" width="672" height="677" key="run.anything.popup" timestamp="1583735635698">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state x="616" y="242" width="672" height="677" key="run.anything.popup/0.0.1920.1048@0.0.1920.1048" timestamp="1582326693270" />
+    <state x="616" y="242" width="672" height="677" key="run.anything.popup/0.0.1920.1048@0.0.1920.1048" timestamp="1583735635698" />
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1583672634898">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>

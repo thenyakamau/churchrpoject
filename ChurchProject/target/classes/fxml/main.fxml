@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXHamburger?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="815.0" prefWidth="1335.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="815.0" prefWidth="1507.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
    <children>
       <VBox alignment="BASELINE_LEFT" prefHeight="701.0" prefWidth="232.0" style="-fx-background-color: #3F2B63;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -68,116 +61,6 @@
                </padding>
             </Button>
          </children></VBox>
-      <StackPane layoutX="287.0" layoutY="41.0">
-         <children>
-            <Pane fx:id="pane_members">
-               <children>
-                  <Label text="Church Members">
-                     <font>
-                        <Font size="36.0" />
-                     </font>
-                  </Label>
-                  <ScrollPane layoutY="262.0" prefHeight="494.0" prefWidth="1019.0" style="-fx-background-insets: 0;">
-                     <content>
-                        <VBox fx:id="pnItems" prefHeight="463.0" prefWidth="1019.0" style="-fx-background-color: #FFFFFF;" />
-                     </content>
-                  </ScrollPane>
-                  <HBox alignment="CENTER_LEFT" layoutY="204.0" prefHeight="60.0" prefWidth="1019.0" style="-fx-background-color: #A9A9A9;">
-                     <children>
-                        <Label alignment="BASELINE_CENTER" prefHeight="32.0" prefWidth="111.0" text="Members Name">
-                           <padding>
-                              <Insets left="20.0" />
-                           </padding>
-                        </Label>
-                        <Label alignment="BASELINE_CENTER" prefHeight="32.0" prefWidth="118.0" text="Phone Number">
-                           <padding>
-                              <Insets left="20.0" />
-                           </padding>
-                        </Label>
-                        <Label alignment="BASELINE_CENTER" prefHeight="32.0" prefWidth="93.0" text="Email">
-                           <padding>
-                              <Insets left="20.0" />
-                           </padding>
-                        </Label>
-                        <Label alignment="BASELINE_CENTER" prefHeight="32.0" prefWidth="68.0" text="Affliation">
-                           <padding>
-                              <Insets left="20.0" />
-                           </padding>
-                        </Label>
-                        <Label alignment="BASELINE_CENTER" prefHeight="32.0" prefWidth="152.0" text="Marriage Status">
-                           <padding>
-                              <Insets left="20.0" />
-                           </padding>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox layoutY="69.0" prefHeight="100.0" prefWidth="1019.0">
-                     <children>
-                        <HBox prefHeight="100.0" prefWidth="1019.0" spacing="50.0">
-                           <children>
-                              <VBox fx:id="total_members_vbox" alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
-                                 <children>
-                                    <Label fx:id="total_members_label" text="22000" textFill="#2c53f2">
-                                       <font>
-                                          <Font name="System Bold" size="26.0" />
-                                       </font>
-                                    </Label>
-                                    <Label text="Total members" />
-                                 </children>
-                                 <HBox.margin>
-                                    <Insets left="70.0" />
-                                 </HBox.margin>
-                              </VBox>
-                              <VBox fx:id="total_children_vbox" alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
-                                 <children>
-                                    <Label fx:id="total_children_label" text="22000" textFill="#26bfbc">
-                                       <font>
-                                          <Font name="System Bold" size="26.0" />
-                                       </font>
-                                    </Label>
-                                    <Label text="Children" />
-                                 </children>
-                                 <HBox.margin>
-                                    <Insets left="70.0" />
-                                 </HBox.margin>
-                              </VBox>
-                              <VBox fx:id="total_youth_vbox" alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
-                                 <children>
-                                    <Label fx:id="total_youth_label" text="22000" textFill="#f2288d">
-                                       <font>
-                                          <Font name="System Bold" size="26.0" />
-                                       </font>
-                                    </Label>
-                                    <Label text="Youth" />
-                                 </children>
-                                 <HBox.margin>
-                                    <Insets left="70.0" />
-                                 </HBox.margin>
-                              </VBox>
-                              <VBox fx:id="total_elders_vbox" alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
-                                 <children>
-                                    <Label fx:id="total_elders_label" text="22000" textFill="#de0000">
-                                       <font>
-                                          <Font name="System Bold" size="26.0" />
-                                       </font>
-                                    </Label>
-                                    <Label text="Elders" />
-                                 </children>
-                                 <HBox.margin>
-                                    <Insets left="70.0" />
-                                 </HBox.margin>
-                              </VBox>
-                           </children>
-                        </HBox>
-                     </children>
-                  </HBox>
-               </children>
-            </Pane>
-            <Pane fx:id="pane_deacons" prefHeight="200.0" prefWidth="200.0" />
-            <Pane fx:id="pane_elders" prefHeight="200.0" prefWidth="200.0" />
-            <Pane fx:id="pane_dashboard" prefHeight="200.0" prefWidth="200.0" />
-         </children>
-      </StackPane>
-      <JFXHamburger layoutX="1291.0" layoutY="31.0" />
+      <AnchorPane fx:id="anchor_pane_main" layoutX="265.0" layoutY="-2.0" prefHeight="815.0" prefWidth="1241.0" />
    </children>
 </AnchorPane>

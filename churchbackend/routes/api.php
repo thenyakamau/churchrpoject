@@ -16,6 +16,7 @@ use Illuminate\Http\Request;
 
 Route::get('fetchChurchMembers', 'Api\MembersController@fetchChurchMembers');
 Route::post('registerClergy', 'Api\Auth\Register@registerClergy');
+Route::get('fetchMembersStatics', 'Api\MembersController@fetchMembersStatics' );
 
 Route::middleware('auth:api')->group(function () {
 

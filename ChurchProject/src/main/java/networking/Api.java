@@ -20,9 +20,13 @@ public class Api {
 
     private Retrofit retrofit;
 
+
+
+    static String BASE_URL = "https://fdfe2a98.ngrok.io/churchproject/churchbackend/public/";
+
     private static Retrofit provideRetrofitInstance() {
 
-        String BASE_URL = "https://fdfe2a98.ngrok.io/churchproject/churchbackend/public/";
+
         return new Retrofit.Builder()
                 .baseUrl(BASE_URL)
                  .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
@@ -97,4 +101,7 @@ public class Api {
 
     }
 
+    public static String getBaseUrl() {
+        return BASE_URL;
+    }
 }
